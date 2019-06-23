@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>particles.js</title>
+  <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
+  <meta name="author" content="Vincent Garreau" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" media="screen" href="css/style.css">
+</head>
+<body>
+
+  <div class="topnav">
+    <a class="active" href="#home">Home</a> <!-- Personal Image, About Me, Job Title, Twitter Feed, ETC -->
+    <a href="#exp">Experience</a> <!-- Work Experience -->
+    <a href="#prj_demo">Projects</a> <!-- live video simultaneously for all projects -->
+    <a href="#contact">Contact</a> <!-- Email, mobile, twitter -->
+  </div>
+
+  <div class="author_name"> Mohammed Ibrahim K. Bokhari </div>
+  <div class="author_job"> Android Developer + Front-End Developer </div>
+
+  <div class="container">
+
+    <div class="img_container">
+      <img src="IMG_20190202_211555__01.jpg"
+       alt="Girl in a jacket"
+       width="185px" height="235px" class="profile_image"> <!-- Change Link -->
+    </div>
+
+    <div class="about_me_container">
+      <h2 class="about_me_text"> Qualifications Brief </h2>
+      <ul class="about_me_summary">
+        <li> Currently working as an Android Developer at GAMA, KSA.</li>
+        <li> Second honors BSc graduate with GPA 4.7/5.0 in Computer Science, 2019.</li>
+        <li> Proficient English language skills with IELTS score: 6.5.</li>
+        <li> Development skills include: Android Development Java,
+          <br> Front-End Web Development,
+          <br> Desktop Development JavaFX.</li>
+      </ul>
+    </div>
+
+    <div class="about_me_specifics">
+      <h2 class="about_me_text"> Personal Details</h2>
+      <ul class="about_me_summary">
+        <li> <b>Date of Birth: </b>1996/12/1</li>
+        <li> <b>Address: </b>Jeddah, Abdullah Al-Faisal St. 21453</li>
+        <li> <b>Nationality: </b>Saudi Arabian</li>
+        <li> <b>Mobile Phone: </b>+966547171060</li>
+        <li> <b>Email: </b>Mohammed.ik.bokhari@gmail.com</li>
+      </ul>
+      <div class="button_container">
+        <a class="dl_cv" href="#dl_cv">Download CV</a> <!-- Download CV -->
+        <a class="linkedin_a" href="https://www.linkedin.com/in/mohammed-bokhari/">Linkedin</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- particles.js container -->
+  <div id="particles-js"></div>
+  <!-- scripts -->
+  <script src="../particles.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    var count_particles, stats, update;
+    stats = new Stats;
+    stats.setMode(0);
+    stats.domElement.style.position = 'absolute';
+    stats.domElement.style.left = '0px';
+    stats.domElement.style.top = '0px';
+    document.body.appendChild(stats.domElement);
+    count_particles = document.querySelector('.js-count-particles');
+    update = function() {
+      stats.begin();
+      stats.end();
+      if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+        count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+      }
+      requestAnimationFrame(update);
+    };
+    requestAnimationFrame(update);
+  </script>
+</body>
+</html>
