@@ -15,8 +15,12 @@ abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
 table{border-collapse:collapse;border-spacing:0}
 hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
 input,select{vertical-align:middle}
-li{list-style:none}
 
+h3{
+	font-size: 18px;
+	font-family: courier;
+	font-weight: lighter;
+}
 
 /* =============================================================================
    My CSS
@@ -25,7 +29,400 @@ li{list-style:none}
 /* ---- base ---- */
 
 /* -------------------------------------------------------------------------- */
-/* PERSONAL IMAGE + PERSONAL BRIEF INFORMATION */ 
+/* DEVEOPED BY TEXT */
+.dev_by{
+	position: absolute;
+	margin-top: 176%;
+	margin-left: 10%;
+}
+
+.dev_by_text{
+	font-weight: bold;
+	font-family: verdana;
+	color: #339;
+}
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/* SKILLS LIST */
+.prog_container_two{
+	margin-left: 100%;
+}
+
+.skillset{
+	list-style: none;
+}
+
+.skill_list{
+	position: absolute;
+	margin-top: 145%;
+	margin-left: 60%;
+	display: flex;
+}
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/* EDUCATION AND SKILLS HEADLINE */
+.edu_head_container{
+	position: absolute;
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 136%;
+	display: flex;
+}
+
+.edu_skill_container{
+	position: absolute;
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+}
+
+.edu_header{
+	color: white;
+	width: 50%;
+	text-align: center;
+	font-size: 36px;
+	font-family: verdana;
+	margin-bottom: 45%;
+}
+
+.skill_header{
+	color: white;
+	width: 50%;
+	text-align: center;
+	font-size: 36px;
+	font-family: verdana;
+}
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/* EXPERIENCE HEADLINE */
+.exp_header{
+	color: white;
+	text-align: center;
+	font-size: 36px;
+	font-family: verdana;
+}
+
+.exp_head_container{
+	position: absolute;
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 60%;
+}
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/* timeline div itself */
+.timeline_edu{
+  position:absolute;
+  margin:0 auto;
+  padding:40px 0;
+	padding-left: 5%;
+  width:50%;
+	margin-top: 145%;
+  box-sizing:border-box;
+	background-color: white;
+}
+/* timeline vertical line */
+.timeline_edu:before{
+  content:'';
+  position:absolute;
+  left:55%;
+  width:2px;
+  height:50%;
+  background:#c5c5c5;
+}
+.timeline_edu ul{
+  padding:0;
+  margin:0;
+}
+.timeline_edu ul li{
+  list-style:none;
+  position:relative;
+  width:50%;
+  padding:20px 40px;
+  box-sizing:border-box;
+}
+.timeline_edu ul li:nth-child(odd){
+  float:left;
+  text-align:right;
+  clear:both;
+}
+.timeline_edu ul li:nth-child(even){
+  float:right;
+  text-align:left;
+  clear:both;
+}
+.content{
+  padding-bottom:20px;
+	color: black;
+	font-size: 12px;
+}
+.timeline_edu ul li:nth-child(odd):before
+{
+  content:'';
+  position:absolute;
+  width:10px;
+  height:10px;
+  top:24px;
+  right:-6px;
+	background-color: #337;
+	box-shadow: #339;
+  border-radius:50%;
+}
+.timeline_edu ul li:nth-child(even):before
+{
+  content:'';
+  position:absolute;
+  width:10px;
+  height:10px;
+  top:24px;
+  left:-4px;
+	background-color: #337;
+	box-shadow: #339;
+  border-radius:50%;
+}
+/* box header */
+.timeline_edu ul li h3{
+  padding:0;
+  margin:0;
+  color: #339;
+  font-weight:600;
+}
+.timeline_edu ul li p{
+  margin:10px 0 0;
+  padding:0;
+}
+.timeline_edu ul li .time h4{
+  margin:0;
+  padding:0;
+  font-size:14px;
+}
+/* box date */
+.timeline_edu ul li:nth-child(odd) .time
+{
+  position:absolute;
+  top:12px;
+  right:-165px;
+  margin:0;
+  padding:8px 16px;
+	background-color: #337;
+	box-shadow: #339;
+  color:#fff;
+  border-radius:18px;
+}
+.timeline_edu ul li:nth-child(even) .time
+{
+  position:absolute;
+  top:12px;
+  left:-165px;
+  margin:0;
+  padding:8px 16px;
+  background-color: #337;
+	box-shadow: #339;
+  color:#fff;
+  border-radius:18px;
+}
+@media(max-width:1000px)
+{
+  .timeline{
+    width:100%;
+  }
+}
+@media(max-width:767px){
+  .timeline_edu{
+    width:100%;
+    padding-bottom:0;
+  }
+  h1{
+    font-size:40px;
+    text-align:center;
+  }
+  .timeline_edu:before{
+    left:20px;
+    height:100%;
+  }
+  .timeline_edu ul li:nth-child(odd),
+  .timeline_edu ul li:nth-child(even)
+  {
+    width:100%;
+    text-align:left;
+    padding-left:50px;
+    padding-bottom:50px;
+  }
+  .timeline_edu ul li:nth-child(odd):before,
+  .timeline_edu ul li:nth-child(even):before
+  {
+    top:-18px;
+    left:16px;
+  }
+  .timeline_edu ul li:nth-child(odd) .time,
+  .timeline_edu ul li:nth-child(even) .time{
+    top:-30px;
+    left:50px;
+    right:inherit;
+  }
+}
+
+
+/* timeline div itself */
+.timeline{
+  position:absolute;
+  margin:0 auto;
+  padding:40px 0;
+	padding-right: 20%;
+	padding-left: 20%;
+  width:100%;
+	margin-top: 66%;
+  box-sizing:border-box;
+	background-color: white;
+}
+/* timeline vertical line */
+.timeline:before{
+  content:'';
+  position:absolute;
+  left:50%;
+  width:2px;
+  height:90%;
+  background:#c5c5c5;
+}
+.timeline ul{
+  padding:0;
+  margin:0;
+}
+.timeline ul li{
+  list-style:none;
+  position:relative;
+  width:50%;
+  padding:20px 40px;
+  box-sizing:border-box;
+}
+.timeline ul li:nth-child(odd){
+  float:left;
+  text-align:right;
+  clear:both;
+}
+.timeline ul li:nth-child(even){
+  float:right;
+  text-align:left;
+  clear:both;
+}
+.content{
+  padding-bottom:20px;
+	color: black;
+	font-size: 12px;
+}
+.timeline ul li:nth-child(odd):before
+{
+  content:'';
+  position:absolute;
+  width:10px;
+  height:10px;
+  top:24px;
+  right:-6px;
+	background-color: #337;
+	box-shadow: #339;
+  border-radius:50%;
+}
+.timeline ul li:nth-child(even):before
+{
+  content:'';
+  position:absolute;
+  width:10px;
+  height:10px;
+  top:24px;
+  left:-4px;
+	background-color: #337;
+	box-shadow: #339;
+  border-radius:50%;
+}
+/* box header */
+.timeline ul li h3{
+  padding:0;
+  margin:0;
+  color: #339;
+  font-weight:600;
+}
+.timeline ul li p{
+  margin:10px 0 0;
+  padding:0;
+}
+.timeline ul li .time h4{
+  margin:0;
+  padding:0;
+  font-size:14px;
+}
+/* box date */
+.timeline ul li:nth-child(odd) .time
+{
+  position:absolute;
+  top:12px;
+  right:-165px;
+  margin:0;
+  padding:8px 16px;
+	background-color: #337;
+	box-shadow: #339;
+  color:#fff;
+  border-radius:18px;
+}
+.timeline ul li:nth-child(even) .time
+{
+  position:absolute;
+  top:12px;
+  left:-165px;
+  margin:0;
+  padding:8px 16px;
+  background-color: #337;
+	box-shadow: #339;
+  color:#fff;
+  border-radius:18px;
+}
+@media(max-width:1000px)
+{
+  .timeline{
+    width:100%;
+  }
+}
+@media(max-width:767px){
+  .timeline{
+    width:100%;
+    padding-bottom:0;
+  }
+  h1{
+    font-size:40px;
+    text-align:center;
+  }
+  .timeline:before{
+    left:20px;
+    height:100%;
+  }
+  .timeline ul li:nth-child(odd),
+  .timeline ul li:nth-child(even)
+  {
+    width:100%;
+    text-align:left;
+    padding-left:50px;
+    padding-bottom:50px;
+  }
+  .timeline ul li:nth-child(odd):before,
+  .timeline ul li:nth-child(even):before
+  {
+    top:-18px;
+    left:16px;
+  }
+  .timeline ul li:nth-child(odd) .time,
+  .timeline ul li:nth-child(even) .time{
+    top:-30px;
+    left:50px;
+    right:inherit;
+  }
+}
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/* PERSONAL IMAGE + PERSONAL BRIEF INFORMATION */
 .container{
 	position: absolute;
 	display: flex;
@@ -44,10 +441,11 @@ li{list-style:none}
 
 .button_container{
 	margin-top: 20%;
+	font-family: verdana;
 }
 
 .img_container{
-	margin-left: 15%;
+	margin-left: 10%;
 	margin-right: 5%;
 }
 
@@ -80,11 +478,20 @@ li{list-style:none}
 	margin-bottom: 5%;
 	font-size: 18px;
 	color: black;
+	font-family: verdana;
 }
 
 .about_me_summary{
 	font-size: 14px;
 	color: black;
+	font-family: verdana;
+}
+
+.about_me_summary_two{
+	font-size: 14px;
+	color: black;
+	font-family: verdana;
+	list-style: none;
 }
 /* -------------------------------------------------------------------------- */
 
@@ -98,6 +505,7 @@ li{list-style:none}
 	font-size: 36px;
 	margin-top: 15%;
 	color: white;
+	font-family: verdana;
 }
 
 .author_job{
@@ -108,6 +516,7 @@ li{list-style:none}
 	font-size: 14px;
 	margin-top: 19%;
 	color: white;
+	font-family: verdana;
 }
 /* -------------------------------------------------------------------------- */
 
@@ -125,6 +534,7 @@ li{list-style:none}
   text-align: center;
   padding: 11px 40px;
   font-size: 14px;
+	font-family: verdana;
 }
 
 /* Change the color of links on hover */
@@ -143,7 +553,6 @@ li{list-style:none}
 html,body{
 	width:100%;
 	height:100%;
-	background:#111;
 }
 
 html{
@@ -202,8 +611,7 @@ canvas{
 /* ---- particles.js container ---- */
 
 #particles-js{
-  width: 100%;
-  height: 100%;
+	height: 2000px;
   background-color: #21192E;
   background-image: url('');
   background-size: cover;
