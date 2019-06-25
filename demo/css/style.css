@@ -29,24 +29,136 @@ h3{
 /* ---- base ---- */
 
 /* -------------------------------------------------------------------------- */
+/* PROJECT DEMO HEADLINE */
+.proj_demo_cert_container{
+	position: absolute;
+	width: 100%;
+	margin-top: 181.5%;
+	display: flex;
+}
+
+.proj_demo_text{
+	color: white;
+	width: 50%;
+	text-align: center;
+	font-size: 36px;
+	font-family: verdana;
+}
+
+.cert_text{
+	color: white;
+	width: 50%;
+	text-align: center;
+	font-size: 36px;
+	font-family: verdana;
+}
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/* VIDEO CARDS */
+.demos_container{
+	position: absolute;
+	margin-top: 190%;
+	display: flex;
+	width: 100%;
+}
+
+.certs_card_img{
+	width: 150px;
+}
+
+.certs_card{
+	margin-left: 5%;
+	margin-top: 10%;
+	margin-bottom: 5%;
+}
+
+.certs_container{
+	display: flex;
+	overflow: auto;
+	white-space: nowrap;
+	margin-left: 50px;
+	margin-right: 50px;
+	width: 90%;
+}
+
+.scrollmenu {
+  display: flex;
+  overflow: auto;
+  white-space: nowrap;
+	margin-left: 50px;
+	margin-right: 50px;
+	width: 45%;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 10%;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card_title{
+	text-align: center;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	font-family: verdana;
+	font-weight: lighter;
+}
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/* EDUCATION AND SKILLS LINE SEPARATOR */
+.separator{
+	position: absolute;
+	margin-left: 50%;
+	height: 450px;
+	width: 2px;
+	background-color: #336;
+}
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
 /* DEVEOPED BY TEXT */
 .dev_by{
 	position: absolute;
-	margin-top: 176%;
-	margin-left: 10%;
+	margin-left: 5%;
+	margin-top: 5%;
 }
 
 .dev_by_text{
-	font-weight: bold;
 	font-family: verdana;
-	color: #339;
+	color: #c5c5c5;
 }
 /* -------------------------------------------------------------------------- */
 
 /* -------------------------------------------------------------------------- */
 /* SKILLS LIST */
 .prog_container_two{
-	margin-left: 100%;
+	margin-left: 100%
+}
+
+.meter {
+	margin-top: 5px;
+  height: 3px;
+  position: relative;
+  background: #E0ECF8;
+  overflow: hidden;
+}
+
+.meter span {
+    display: block;
+    height: 100%;
+}
+
+.progress {
+    background-color: #045FDF;
 }
 
 .skillset{
@@ -54,27 +166,28 @@ h3{
 }
 
 .skill_list{
-	position: absolute;
-	margin-top: 145%;
-	margin-left: 60%;
+	margin-left: 50%;
+	margin-top: 2%;
 	display: flex;
 }
 /* -------------------------------------------------------------------------- */
 
 /* -------------------------------------------------------------------------- */
 /* EDUCATION AND SKILLS HEADLINE */
+.edu_skill_container{
+	display: flex;
+	width: 100%;
+	margin-top: 139%;
+	position: absolute;
+	background-color: white;
+	padding-top: 2%;
+	padding-bottom: 6%;
+}
+
 .edu_head_container{
 	position: absolute;
 	width: 100%;
-	margin: 0 auto;
 	margin-top: 136%;
-	display: flex;
-}
-
-.edu_skill_container{
-	position: absolute;
-	width: 100%;
-	margin: 0 auto;
 	display: flex;
 }
 
@@ -84,7 +197,6 @@ h3{
 	text-align: center;
 	font-size: 36px;
 	font-family: verdana;
-	margin-bottom: 45%;
 }
 
 .skill_header{
@@ -116,22 +228,19 @@ h3{
 /* -------------------------------------------------------------------------- */
 /* timeline div itself */
 .timeline_edu{
-  position:absolute;
-  margin:0 auto;
+	position: relative;
   padding:40px 0;
-	padding-left: 5%;
-  width:50%;
-	margin-top: 145%;
+	width: 100%;
+	margin-left: 50%;
   box-sizing:border-box;
-	background-color: white;
 }
 /* timeline vertical line */
 .timeline_edu:before{
   content:'';
-  position:absolute;
-  left:55%;
+  position: absolute;
+  left:115%;
   width:2px;
-  height:50%;
+  height:80%;
   background:#c5c5c5;
 }
 .timeline_edu ul{
@@ -141,8 +250,7 @@ h3{
 .timeline_edu ul li{
   list-style:none;
   position:relative;
-  width:50%;
-  padding:20px 40px;
+  width:100%;
   box-sizing:border-box;
 }
 .timeline_edu ul li:nth-child(odd){
@@ -167,7 +275,7 @@ h3{
   width:10px;
   height:10px;
   top:24px;
-  right:-6px;
+	right: -38px;
 	background-color: #337;
 	box-shadow: #339;
   border-radius:50%;
@@ -542,12 +650,6 @@ h3{
   background-color: #337;
   color: white;
 }
-
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #337;
-  color: white;
-}
 /* -------------------------------------------------------------------------- */
 
 html,body{
@@ -611,7 +713,7 @@ canvas{
 /* ---- particles.js container ---- */
 
 #particles-js{
-	height: 2000px;
+	height: 2660px;
   background-color: #21192E;
   background-image: url('');
   background-size: cover;

@@ -7,7 +7,7 @@
   <meta name="author" content="Vincent Garreau" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link rel="stylesheet" media="screen" href="css/style.css">
-  <script type="text/javascript" src="JavaScript.js"></script>
+  <script type="text/javascript" src="js/JavaScript.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" ></script>
 </head>
 <body>
@@ -21,8 +21,13 @@
     <p class="skill_header"> Skills </p>
   </div>
 
+  <div class="proj_demo_cert_container">
+    <p class="proj_demo_text"> Project Demos </p>
+    <p class="cert_text"> Certifications </p>
+  </div>
+
   <div class="exp_head_container">
-    <p class="exp_header"> Experience </p>
+    <p class="exp_header" id="exp"> Experience </p>
   </div>
 
   <div class="timeline">
@@ -30,7 +35,9 @@
       <li>
         <div class="content">
           <h3>Globalink Research Internship</h3>
-          <p>Topic: LoRaWAN Literature Review and Network Deployment using Dragino LoRa. The internship was held in Universite de Sherbrooke, Sherbrooke, Canada.<br><br> <b>Duration:</b> Three months.<br><br> <b> Status:</b> Student.</p>
+          <p>Topic: LoRaWAN Literature Review and Network Deployment using Dragino LoRa.
+             The internship was held in Universite de Sherbrooke, Sherbrooke, Canada.
+             <br><br> <b>Duration:</b> Three months.<br><br> <b> Status:</b> Student.</p>
         </div>
         <div class="time">
           <h4>May 2018</h4>
@@ -40,7 +47,10 @@
       <li>
         <div class="content">
           <h3>Third National Programming Competition - Abha</h3>
-          <p>Topic: Programming problem-solving competition amongst universities kingdom-wide. Training duration was <b> two weeks </b> prior to competition date.<br><br> <b>Contest Duration:</b> Four hours.<br><br> <b>Score:</b> 6/10 questions solved.<br><br> <b>Status:</b> Student. </p>
+          <p>Topic: Programming problem-solving competition amongst universities kingdom-wide.
+             Training duration was <b> two weeks </b> prior to competition date.<br><br>
+              <b>Contest Duration:</b> Four hours.<br><br> <b>Score:</b> 6/10 questions solved.
+              <br><br> <b>Status:</b> Student. </p>
         </div>
         <div class="time">
           <h4>October 2018</h4>
@@ -50,7 +60,11 @@
       <li>
         <div class="content">
           <h3>Computer Lab Teaching Assistant</h3>
-          <p>Java programming-101 lab for Computer Science students at University of Jeddah.<br><br><b> Concepts taught include:</b> control statements, functions, variables, arrays, types, system input, arithmetics, and string manipulation.<br><br> <b>Duration:</b> Four months. <br><br> <b> Status:</b> Student.</p>
+          <p>Java programming-101 lab for Computer Science students at University of Jeddah.
+            <br><br><b> Concepts taught include:</b>
+             control statements, functions, variables, arrays, types, system input,
+              arithmetics, and string manipulation.<br><br> <b>Duration:</b>
+               Four months. <br><br> <b> Status:</b> Student.</p>
         </div>
         <div class="time">
           <h4>January 2019</h4>
@@ -60,7 +74,9 @@
       <li>
         <div class="content">
           <h3>Android Developer at Global Arabian for Modern Applications Ltd.</h3>
-          <p>Member of the mobile development team in the development department. Currently under training period for a duration of <b>three</b> months.<br><br> <b>Duration:</b> Currently working there.<br><br><b>Status:</b> Employee.</p>
+          <p>Member of the mobile development team in the development department.
+             Currently under training period for a duration of <b>three</b> months.
+             <br><br> <b>Duration:</b> Currently working there.<br><br><b>Status:</b> Employee.</p>
         </div>
         <div class="time">
           <h4>June 2019</h4>
@@ -70,18 +86,17 @@
     </ul>
   </div>
 
-  <div class="topnav">
-    <a class="active" href="#home">Home</a> <!-- Personal Image, About Me, Job Title, Twitter Feed, ETC -->
-    <a href="#exp">Experience</a> <!-- Work Experience -->
-    <a href="#edu">Education</a>
-    <a href="#skills">Skill</a>
-    <a href="#prj_demo">Projects Demo</a> <!-- live video simultaneously for all projects -->
-    <a href="#certs">Certifications</a>
+  <div class="topnav" id="topnav">
+    <a href="#exp" onclick="expr()">Experience</a> <!-- Work Experience -->
+    <a href="#edu" onclick="eduSkills()">Education</a>
+    <a href="#skills" onclick="eduSkills()">Skill</a>
+    <a href="#prj_demo" onclick="projDemoCerts()">Projects Demo</a> <!-- live video simultaneously for all projects -->
+    <a href="#certs" onclick="projDemoCerts()">Certifications</a>
     <a href="https://www.github.com/memeos135">GitHub</a>
-    <a href="#contact">Contact</a> <!-- Email, mobile, twitter -->
+    <a href="#contact" onclick="contact()">Contact</a> <!-- Email, mobile, twitter -->
   </div>
 
-  <div class="author_name"> Mohammed Ibrahim K. Bokhari </div>
+  <div class="author_name" id="name"> Mohammed Ibrahim K. Bokhari </div>
   <div class="author_job"> Android Developer + Front-End Developer </div>
 
   <div class="edu_skill_container">
@@ -107,6 +122,8 @@
 
     </div>
 
+    <div class="separator"></div>
+
     <div class="skill_list">
 
       <div class="prog_container">
@@ -115,56 +132,72 @@
         <li class="skillset">
           <div class="content">
             <h3>Java</h3>
-            <progress value="87" max="100"></progress>
+            <div class="meter">
+              <span style="width:90%;"><span class="progress"></span></span>
+            </div>
           </div>
         </li>
 
         <li class="skillset">
           <div class="content">
             <h3>JavaScript</h3>
-            <progress value="80" max="100"></progress>
+            <div class="meter">
+              <span style="width:80%;"><span class="progress"></span></span>
+            </div>
           </div>
         </li>
 
         <li class="skillset">
           <div class="content">
             <h3>jQuery</h3>
-            <progress value="75" max="100"></progress>
+            <div class="meter">
+              <span style="width:80%;"><span class="progress"></span></span>
+            </div>
           </div>
         </li>
 
         <li class="skillset">
           <div class="content">
             <h3>SQL</h3>
-            <progress value="50" max="100"></progress>
+            <div class="meter">
+              <span style="width:55%;"><span class="progress"></span></span>
+            </div>
           </div>
         </li>
 
         <li class="skillset">
           <div class="content">
             <h3>HTML</h3>
-            <progress value="70" max="100"></progress>
+            <div class="meter">
+              <span style="width:70%;"><span class="progress"></span></span>
+            </div>
           </div>
         </li>
 
         <li class="skillset">
           <div class="content">
             <h3>CSS</h3>
-            <progress value="65" max="100"></progress>
+            <div class="meter">
+              <span style="width:65%;"><span class="progress"></span></span>
+            </div>
           </div>
         </li>
 
         <li class="skillset">
           <div class="content">
             <h3>Firebase</h3>
-            <progress value="80" max="100"></progress>
+            <div class="meter">
+              <span style="width:80%;"><span class="progress"></span></span>
+            </div>
           </div>
         </li>
 
         <li class="skillset">
           <div class="content">
             <h3>Python</h3>
-            <progress value="45" max="100"></progress>
+            <div class="meter">
+              <span style="width:45%;"><span class="progress"></span></span>
+            </div>
           </div>
         </li>
 
@@ -177,14 +210,18 @@
         <li class="skillset">
           <div class="content">
             <h3>English</h3>
-            <progress value="95" max="100"></progress>
+            <div class="meter">
+              <span style="width:95%;"><span class="progress"></span></span>
+            </div>
           </div>
         </li>
 
         <li class="skillset">
           <div class="content">
             <h3>Arabic</h3>
-            <progress value="95" max="100"></progress>
+            <div class="meter">
+              <span style="width:95%;"><span class="progress"></span></span>
+            </div>
           </div>
         </li>
 
@@ -195,10 +232,68 @@
 
   </div>
 
+  <div class="demos_container">
+
+    <div class="scrollmenu">
+
+      <div class="card">
+        <iframe width="320" height="240"
+          src="https://www.youtube.com/embed/tgbNymZ7vqY">
+        </iframe>
+        <h4 class="card_title"> BooKT Android </h4>
+      </div>
+
+      <div class="card">
+        <iframe width="320" height="240"
+          src="https://www.youtube.com/embed/tgbNymZ7vqY">
+        </iframe>
+        <h4 class="card_title"> BooKT Webpage </h4>
+      </div>
+
+      <div class="card">
+        <iframe width="320" height="240"
+          src="https://www.youtube.com/embed/tgbNymZ7vqY">
+        </iframe>
+        <h4 class="card_title"> Udacity MacroCounter </h4>
+      </div>
+
+      <div class="card">
+        <iframe width="320" height="240"
+          src="https://www.youtube.com/embed/tgbNymZ7vqY">
+        </iframe>
+        <h4 class="card_title"> Udacity BakingApp </h4>
+      </div>
+
+    </div>
+
+    <div class="certs_scrollmenu">
+
+      <div class="certs_container">
+
+        <div class="certs_card">
+          <img class="certs_card_img" src="http://www.wakeed.org/wp-content/uploads/2016/07/award-icon-06.png" alt="Avatar">
+          <a href="https://graduation.udacity.com/confirm/EMTU96C9" class="certs_card_title"> <br><br>Android Developer ND<br><br><b> Udacity</b> </a>
+        </div>
+
+        <div class="certs_card">
+          <img class="certs_card_img" src="http://www.wakeed.org/wp-content/uploads/2016/07/award-icon-06.png" alt="Avatar">
+          <a href="https://graduation.udacity.com/confirm/YXHLKSLS" class="certs_card_title"> <br><br>Android Basics ND<br><br><b> Udacity</b> </a>
+        </div>
+
+        <div class="certs_card">
+          <img class="certs_card_img" src="http://www.wakeed.org/wp-content/uploads/2016/07/award-icon-06.png" alt="Avatar">
+          <a href="https://graduation.udacity.com/confirm/QZXFRKGD" class="certs_card_title"> <br><br>Intro. to Programming ND<br><br><b> Udacity</b> </a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
   <div class="container">
 
     <div class="img_container">
-      <img src="IMG_20190202_211555__01.jpg"
+      <img src="https://www.dropbox.com/s/7d4qnhcv5q8qfwb/IMG_20190202_211555__01.jpg?raw=1"
        alt="Girl in a jacket"
        width="185px" height="235px" class="profile_image"> <!-- Change Link -->
     </div>
@@ -225,7 +320,7 @@
         <li> <b>Email: </b>Mohammed.ik.bokhari@gmail.com</li>
       </ul>
       <div class="button_container">
-        <a class="dl_cv" href="#dl_cv">Download CV</a> <!-- Download CV -->
+        <a class="dl_cv" href="https://www.dropbox.com/s/g9rp3rldh2ki717/RESUME.pdf?dl=1" download>Download CV</a> <!-- Download CV -->
         <a class="linkedin_a" href="https://www.linkedin.com/in/mohammed-bokhari/">Linkedin</a>
       </div>
     </div>
@@ -236,16 +331,5 @@
   <!-- scripts -->
   <script src="../particles.js"></script>
   <script src="js/app.js"></script>
-  <script>
-    var count_particles, update;
-    count_particles = document.querySelector('.js-count-particles');
-    update = function() {
-      if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-        count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-      }
-      requestAnimationFrame(update);
-    };
-    requestAnimationFrame(update);
-  </script>
 </body>
 </html>
