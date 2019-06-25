@@ -226,7 +226,7 @@ h3{
 /* -------------------------------------------------------------------------- */
 
 /* -------------------------------------------------------------------------- */
-/* timeline div itself */
+/* TIMELINE FOR EDUCATION */
 .timeline_edu{
 	position: relative;
   padding:40px 0;
@@ -375,7 +375,7 @@ h3{
 }
 
 
-/* timeline div itself */
+/* TIMELINE FOR EXPERIENCE */
 .timeline{
   position:absolute;
   margin:0 auto;
