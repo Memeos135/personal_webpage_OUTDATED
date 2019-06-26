@@ -12,56 +12,11 @@ h3{
 }
 
 body {
-	color: #fff;
 	background: linear-gradient(-45deg, #335, #336, #336, #339);
-	background-size: 400% 400%;
-	-webkit-animation: Gradient 15s ease infinite;
-	-moz-animation: Gradient 15s ease infinite;
-	animation: Gradient 15s ease infinite;
-  background-color: #21192E;
   width: 100%;
   margin: 0;
 }
 
-/* -------------------------------------------------------------------------- */
-/* BACKGROUND GRADIENT COLOR ANIMATION */
-@-webkit-keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
-}
-
-@-moz-keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
-}
-
-@keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
-}
-
-/* -------------------------------------------------------------------------- */
 /* ROOT CONTAINER */
 .mass_container{
   display: inline;
@@ -120,7 +75,7 @@ body {
   /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	margin-left: 15px;
-	margin-bottom: 10%;
+	margin-bottom: 5%;
 	margin-top: 10%;
 }
 
@@ -147,7 +102,6 @@ body {
 
 .certs_card_img{
 	width: 150px;
-  margin-top: 55%;
 }
 
 .certs_card_title{
@@ -157,6 +111,7 @@ body {
 
 .certs_card{
   margin-left: 12%;
+  margin-top: 10%;
 }
 /* -------------------------------------------------------------------------- */
 
@@ -226,7 +181,7 @@ body {
   position: absolute;
   left: 25.5%;
   width:2px;
-  height:30%;
+  height:100%;
   background:#c5c5c5;
 }
 .timeline_edu ul{
@@ -340,7 +295,7 @@ body {
   }
   .timeline_edu:before{
     left:254px;
-    height:65%;
+    height:400px;
   }
   .timeline_edu ul li:nth-child(odd),
   .timeline_edu ul li:nth-child(even)
@@ -405,7 +360,7 @@ body {
   position: absolute;
   left: 49.9%;
   width:2px;
-  height:100%;
+  height:800px;
   background:#c5c5c5;
 }
 .timeline ul{
@@ -519,7 +474,7 @@ body {
   }
   .timeline:before{
     left:20px;
-    height:100%;
+    height:800px;
   }
   .timeline ul li:nth-child(odd),
   .timeline ul li:nth-child(even)
@@ -565,14 +520,14 @@ body {
   display: flex;
   background-color: white;
   min-width: 1080px;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  height: 350px;
 }
 
 .img_container{
   width: 15%;
   margin-left: 5%;
   margin-right: 5%;
+  margin-top: 50px;
 }
 
 .about_me_container{
@@ -585,6 +540,7 @@ body {
 }
 
 .about_me_text{
+  margin-top: 50px;
   font-size: 18px;
 	color: black;
 	font-family: verdana;
@@ -595,7 +551,7 @@ body {
   font-size: 12px;
 	color: black;
 	font-family: verdana;
-  margin-top: 10%;
+  margin-top: 50px;
 }
 
 .about_me_summary_two{
@@ -603,12 +559,11 @@ body {
 	color: black;
 	font-family: verdana;
 	list-style: none;
-  margin-top: 10%;
+  margin-top: 50px;
 }
 
 .button_container{
-  margin-top: 10%;
-  margin-left: 7%;
+  margin-top: 30px;
 }
 
 .button_container a{
@@ -626,7 +581,6 @@ body {
 /* -------------------------------------------------------------------------- */
 /* HEADLINE CONTAINER */
 .headline_container{
-  display: flex;
   height: 400px;
   min-width: 1080px;
 }
@@ -644,22 +598,23 @@ body {
 }
 
 .author_headline_container{
-  width: 73%;
-  margin-top: 12%;
+  width: 100%;
+  margin-top: 5%;
 }
 
 .author_name{
   font-size: 36px;
 	color: white;
 	font-family: verdana;
+  text-align: center;
 }
 
 .author_job{
   font-size: 14px;
   color: white;
   font-family: verdana;
-  margin-left: 15%;
   margin-top: 1%;
+  text-align: center;
 }
 /* -------------------------------------------------------------------------- */
 
