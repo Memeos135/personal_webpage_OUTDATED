@@ -1,10 +1,10 @@
 // SCROLL ANIMATION FUNCTIONS
 function expr(){ // EXPERIENCE
-  $("html, body").animate({scrollTop : 825}, "fast");
+  $("html, body").animate({scrollTop : 845}, "fast");
 }
 
 function eduSkills(){ // EDUCATION/SKILLS
-  $("html, body").animate({scrollTop : 1920}, "fast");
+  $("html, body").animate({scrollTop : 1800}, "fast");
 }
 
 function projDemoCerts(){ // PROJECT DEMO/CERTIFICATIONS
